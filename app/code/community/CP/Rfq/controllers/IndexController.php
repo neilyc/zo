@@ -43,9 +43,6 @@ class CP_Rfq_IndexController extends Mage_Core_Controller_Front_Action
     	if (!Zend_Validate::is(trim($post['phone_number']) , 'NotEmpty')) {
     	  $error = true;
     	}
-      if (!Zend_Validate::is(trim($post['avg_order']) , 'NotEmpty')) {
-	      $error = true;
-    	}
     	if (!Zend_Validate::is(trim($post['email']), 'EmailAddress')) {
     		$error = true;
     	}
