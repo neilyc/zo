@@ -25,8 +25,38 @@
  */
 ?>
 <div class="footer-container">
-    <div class="footer">
-        <?php echo $this->getChildHtml() ?>
-        <!--address class="copyright"><?php echo $this->getCopyright() ?></address-->
+  <div class="footer">
+  <?php echo $this->getChildHtml() ?>
+
+    <div class="links">
+      <div class="block-title">
+          <strong><span>Company</span></strong>
+      </div>
+      <ul>
+        <li><a href="/about-magento-demo-store/">About Us</a></li>
+        <li><a href="/contacts/">Contact Us</a></li>
+        <li><a href="/customer-service/">Customer Service</a></li>
+        <li><a href="/privacy-policy-cookie-restriction-mode/">Privacy Policy</a></li>
+      </ul>
     </div>
+    <div class="links">
+      <div class="block-title">
+        <strong><span>Quick Links</span></strong>
+      </div>
+      <ul>
+        <li class="first"><a href="/catalog/seo_sitemap/category/" title="Plan du site">Plan du site</a></li>
+        <li><a href="/catalogsearch/term/popular/" title="Termes de recherche">Termes de recherche</a></li>
+        <li class=" last"><a href="/catalogsearch/advanced/" title="Recherche avancée">Recherche avancée</a></li>
+      </ul>
+    </div>
+    <div class="links">
+      <div class="block-title">
+        <strong><span>Account</span></strong>
+      </div>
+      <ul>
+        <li class="first"><a href="/customer/account/" title="Mon compte">Mon compte</a></li>
+      </ul>
+    </div>
+  <!--address class="copyright">&copy; 2016 Magento Demo Store. All Rights Reserved.</address-->
+  </div>
 </div>

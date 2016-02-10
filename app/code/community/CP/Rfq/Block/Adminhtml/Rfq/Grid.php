@@ -91,6 +91,11 @@ class CP_Rfq_Block_Adminhtml_Rfq_Grid extends Mage_Adminhtml_Block_Widget_Grid
                         'caption'   => Mage::helper('rfq')->__('Edit'),
                         'url'       => array('base'=> '*/*/edit'),
                         'field'     => 'id'
+                    ),
+                    array(
+                        'caption'   => Mage::helper('rfq')->__('Create Quote'),
+                        'url'       => array('base'=> '*/*/cquote'),
+                        'field'     => 'id'
                     )
                 ),
                 'filter'    => false,

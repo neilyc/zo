@@ -83,7 +83,7 @@ class CP_Rfq_IndexController extends Mage_Core_Controller_Front_Action
 					//$translate->setTranslateInline(true);
 					
 				Mage::getSingleton('core/session')->addSuccess('Your quotation is submitted successfully and we will be back to you as soon as possible in Email.');
-                  Mage::getSingleton('core/session')->setRfq(); 
+        Mage::getSingleton('core/session')->setRfq(); 
                   
 				$this->_redirect('*/*/');
 				return;
