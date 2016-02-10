@@ -1,0 +1,52 @@
+<div id="popupquestion" class="quotation_from">
+  <?php $data = Mage::getSingleton('core/session')->getRfq(); ?>
+  <h1><?php echo $this->__('Request a Quote and get Estimation in email.');?></h1>
+  <form method="post" action="<?php echo $this->getUrl('rfq/index/post/') ?>" id="rfqform">
+    <ul class="form-list">
+      <li>
+        <div class="field">
+          <label class="required"><em>*</em><?php echo $this->__('Name :')?></label>
+          <div class="input-box">
+            <input name="name" id="name" title="<?php echo Mage::helper('rfq')->__('Name') ?>" value="<?php echo $data['name']; ?>" class="input-text required-entry" type="text" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="required"><em>*</em><?php echo $this->__('Email :')?></label>
+          <div class="input-box">
+            <input name="email" id="email" title="<?php echo Mage::helper('rfq')->__('Email') ?>" value="<?php echo $data['email']; ?>" class="input-text required-entry validate-email" type="text" />
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="field">
+          <label class="required"><em>*</em><?php echo $this->__('Average monthly order :')?></label>
+          <div class="input-box">
+            <input name="avg_order" id="avg_order" title="<?php echo Mage::helper('rfq')->__('Average monthly order') ?>" value="<?php echo $data['avg_order']; ?>" class="input-text required-entry" type="text" />
+          </div>
+        </div>
+        <div class="field">
+          <label><?php echo $this->__('Phone Number :')?></label>
+          <div class="input-box">
+            <input name="phone_number" id="phone_number" title="<?php echo Mage::helper('rfq')->__('Phone Number') ?>" value="<?php echo $data['phone_number']; ?>" class="input-text" type="text" />
+          </div>
+        </div>
+      </li>
+      <li class="wide">
+        <div class="field">
+          <label class="required"><em>*</em><?php echo $this->__('Comment Regarding Quotation')?> </label>
+          <div class="input-box">
+            <textarea cols="53" rows="3" name="question" id="question" title="<?php echo Mage::helper('rfq')->__('Question') ?>" class="input-text required-entry"><?PHP echo  $data['question']; ?></textarea>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="buttons-set mrg-none float_L">
+      <button type="submit" title="<?php echo Mage::helper('rfq')->__('Post Question') ?>" class="red-btn"><span><span><?php echo Mage::helper('rfq')->__('Post Question') ?></span></span></button>
+    </div>
+  </form>
+  <script type="text/javascript">
+//<![CDATA[
+    var rfqform = new VarienForm('rfqform', true);
+//]]>
+</script> 
+</div>

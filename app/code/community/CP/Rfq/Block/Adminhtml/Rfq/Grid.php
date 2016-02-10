@@ -52,21 +52,6 @@ class CP_Rfq_Block_Adminhtml_Rfq_Grid extends Mage_Adminhtml_Block_Widget_Grid
       		'align'     =>'left',
       		'index'     => 'email',
       ));
-	  $this->addColumn('Company', array(
-      		'header'    => Mage::helper('rfq')->__('Company'),
-      		'align'     =>'left',
-      		'index'     => 'company_name',
-      ));
-	  $this->addColumn('Website', array(
-      		'header'    => Mage::helper('rfq')->__('Website'),
-      		'align'     =>'left',
-      		'index'     => 'website_name',
-      ));
-	  $this->addColumn('Avg monthly order', array(
-      		'header'    => Mage::helper('rfq')->__('Avg monthly order'),
-      		'align'     =>'left',
-      		'index'     => 'avg_order',
-      ));
 	  $this->addColumn('Phone', array(
       		'header'    => Mage::helper('rfq')->__('Phone'),
       		'align'     =>'left',
