@@ -66,7 +66,7 @@
 
                 <div class="extra-info">
                     <?php echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
-                    <?php echo $this->getChildHtml('product_type_availability'); ?>
+                    <?php //echo $this->getChildHtml('product_type_availability'); ?>
                 </div>
 
                 <?php echo $this->getChildHtml('alert_urls') ?>
@@ -88,7 +88,7 @@
 
             </div>
 
-            <div class="add-to-cart-wrapper">
+            <!--div class="add-to-cart-wrapper">
                 <?php echo $this->getChildHtml('product_type_data') ?>
                 <?php echo $this->getChildHtml('extrahint') ?>
 
@@ -110,7 +110,7 @@
                         <?php echo $this->getChildHtml('sharing') ?>
                     </div>
                 <?php endif; ?>
-            </div>
+            </div-->
 
             <?php echo $this->getChildHtml('related_products') ?>
 
@@ -179,15 +179,15 @@
                 <div class="tab-content"><?php echo $_helper->productAttribute($_product, nl2br($_product->getItineraire()), 'itinieraire') ?></div>
             </dd>
             <?php if($_product->getHebergement()) : ?>
-            <dt class="tab"><span>Hébergement</span></dt>
-            <dd class="tab-container">
-                <div class="tab-content"><?php echo $_helper->productAttribute($_product, nl2br($_product->getHebergement()), 'hebergement') ?></div>
-            </dd>
+                <dt class="tab"><span>Hébergement</span></dt>
+                <dd class="tab-container">
+                    <div class="tab-content"><?php echo $_helper->productAttribute($_product, nl2br($_product->getHebergement()), 'hebergement') ?></div>
+                </dd>
             <?php endif; ?>
         </dl>
     </div>
 
-    <?php echo $this->getChildHtml('upsell_products') ?>
+    <?php //echo $this->getChildHtml('upsell_products') ?>
     <?php echo $this->getChildHtml('product_additional_data') ?>
 
 </div>
