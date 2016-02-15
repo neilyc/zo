@@ -2,12 +2,25 @@
 <config>
   <modules>
     <Zo_Customization>
-      <version>0.0.1</version>
+      <version>0.0.2</version>
     </Zo_Customization>
   </modules>
   <global>
+    <resources>
+      <customization_setup>
+        <setup>
+          <module>Zo_Customization</module>
+        </setup>
+      </customization_setup>
+    </resources>
     <blocks>
       <catalog><rewrite><product_view>Zo_Customization_Block_Catalog_Product_View</product_view></rewrite></catalog>
+      <!--adminhtml>
+        <rewrite>
+          <catalog_product_edit_tabs>Zo_Customization_Block_Adminhtml_Catalog_Product_Edit_Tabs</catalog_product_edit_tabs>
+        </rewrite>
+      </adminhtml-->
     </blocks>    
   </global>
+
 </config>
