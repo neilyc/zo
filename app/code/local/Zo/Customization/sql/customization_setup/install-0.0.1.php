@@ -4,7 +4,7 @@
 // Set data:
 $attributeName  = 'Itinéraire'; // Name of the attribute
 $attributeCode  = 'itineraire'; // Code of the attribute
-$attributeGroup = 'General';          // Group to add the attribute to
+$attributeGroup = 'Informations';          // Group to add the attribute to
 $attributeSetIds = array(4);          // Array with attribute set ID's to add this attribute to. (ID:4 is the Default Attribute Set)
 
 // Configuration:
